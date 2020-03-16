@@ -1,0 +1,40 @@
+body {
+	background-color: floralwhite;
+	font-family: "verdana", "helvetica";
+}
+
+h2{
+	text-align:center;
+	color: maroon;
+	margin-bottom:1em;
+}
+
+h1, h3 {
+	color: navy;
+	line-height: 0em;
+}
+
+h3 {
+	margin-top:2em;
+}
+
+.main {
+}
+
+.content {
+	margin: 0px auto;
+	width: 600px;
+}
+
+.question {
+	color: blue;
+	line-height: 0em;
+}
+
+.answer {
+	margin-bottom:2em;
+}
+
+.blueText {
+	color:blue;
+}
