@@ -3,6 +3,13 @@ body {
 	font-family: "verdana", "helvetica";
 }
 
+h1 img{
+	border:none 0px;
+}
+img{
+	border:solid black 1px;
+}
+
 h2{
 	text-align:center;
 	color: maroon;
