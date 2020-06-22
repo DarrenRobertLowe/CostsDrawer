@@ -3,6 +3,10 @@ body {
 	font-family: "verdana", "helvetica";
 }
 
+a {
+	font-size: 12px;
+}
+
 h1 img{
 	border:none 0px;
 }
