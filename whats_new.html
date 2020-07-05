@@ -6,20 +6,39 @@
 		<div class = "main">
 			<div class="content">
 				<h1><img src="header_graphic.png" alt="Costs Drawer"</h1>
-				<h2>What's New in Costs Drawer 2.2.2 </h2>
 				
-				<p>This release is a hotfix for an issue where files saved to the default directory (<i>the Costs Drawer program directory</i>) 
-				could not be found when trying to load them. The issue was caused by "sandboxing", which automatically moved any file 
-				created in the program directory to the <b>%localappdata%\costs_drawer</b> folder instead. This sandboxing is part of the engine
-				Costs Drawer is built in and as such, we have no ability to modify it. Instead, this fix allows users to recover those files if
-				they're still in their recent files list, and will prompt them to save the files elsewhere.</p>
+				<h2>What's New in Costs Drawer 2.3.0</h2>
+				<a href="https://github.com/DarrenRobertLowe/CostsDrawer/releases/tag/v2.3.0">See release notes for v2.3.0</a>
+				<p>This release adds a new feature to the front page so users can add text below the Record number and above the first Plaintiff name.
+				You can now change the "Costs of behalf of" between Plaintiff and Defendant (<i>further features are planned for this</i>).
+				It also introduces the ability to highlight text, which then allows you to cut or copy the highlighted text.
+				Note this feature is still somewhat in development, so might not behave exactly as expected.</p>
+				<p>Importantly this version also fixes a number of bugs:</p>
+				<p><b><u>Most Notable Bug Fixes:</u></b></p>
 				<ul>
-					<li>Added a feature to recover files that were saved to the Costs Drawer program directory.</li>
-					<li>Default directory for saving files has been changed to the desktop.</li>
-					<li>Disabled ability to save files to the Costs Drawer program directory.</li>
-					<li>Added a document version to cdf files, this means from v2.2.2 onwards, there will be forwards and backwards compatibility so users on older versions won't be forced to update when opening files created in more recent versions, unless the docVer is newer.</li>
+					<li>A bug that could cause Costs Drawer to crash when you attempted to edit an Instructions Fee item.</li>
+					<li>A recently introduced bug that caused exported Circuit Court bills to not include a fee for Drawing Costs and Copy.</li>
 				</ul>
-
+				<p><b><u>Details:</u></b></p>
+				<ul>
+					<li>Fixed a recently introduced bug where instructions fee items could crash Costs Drawer when clicking on them.</li>
+					<li>Fixed an issue where Circuit Court costs would not include fee for Drawing Costs and Copy when exported to Excel format.</li>
+					<li>Added 3 rows to the front page below the record number where users can add info about their Circuit region or whatever other info might be needed.</li>
+					<li>Fixed an issue with the dictionary that caused words beginning with the letter 'P' to be always marked as incorrect.</li>
+					<li>Added ability to highlight text, along with ability to copy, cut and delete the highlighted text. (<i>still in development</i>)</li>
+					<li>Fixed an issue introduced by a recent change where, when editing an item's description, the text would not appear to fit the column correctly when zoomed in or out.</li>
+					<li>Fixed: "Move Item Up" grayed-out high-resolution sprite was using the wrong sprite.</li>
+					<li>Move Items Up/Down buttons now appear gray when the selected item can't be moved.</li>
+					<li>Fixed issues with the File Menu when in large text / high resolution mode.</li>
+					<li>Tooltips should now always appear above other objects and text.</li>
+					<li>Fixed the Search box appearing over "Help" menu when in high resolution mode.</li>
+					<li>Added a button to change the document between Plaintiff and Defendant (further features in relation to this are planned)</li>
+					<li>Removed the print feature. Users should instead export to Excel and then print from there.</li>
+					<li>"Circuit Court" and "High Court" text is now bold when exported to Excel format.</li>
+					<li>Record Number no longer remains selected after confirming (pressing enter).</li>
+					<li>Pasted text will now include hyphens (i.e. " - ").</li>
+				</ul>
+				
 				<p><a href="https://github.com/DarrenRobertLowe/CostsDrawer/releases/tag/v2.2.1">See release notes for Costs Drawer 2.2.1 </a></p>
 				<hr></hr>
 				<h2>What's New in Costs Drawer 2.2 </h2>
